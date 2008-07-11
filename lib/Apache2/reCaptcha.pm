@@ -1,4 +1,4 @@
-package HIC::reCaptcha;
+package Apache2::reCaptcha;
 use Apache2::AuthTicket;
 @ISA = ("Apache2::AuthTicket");
 use vars qw(%DEFAULTS %CONFIG);
@@ -11,7 +11,7 @@ use warnings;
 use Apache2::Const qw(REDIRECT OK);
 use constant DEBUGGING => 0;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 my $_SESS_NAME='reCaptchaID';
 
