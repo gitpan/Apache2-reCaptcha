@@ -98,6 +98,7 @@ sub read_file{
 }
 
 1;
+
 __END__
 
 =head1 NAME
@@ -115,7 +116,7 @@ Apache2::reCaptcha - reCaptcha based auth system using cookies.
  PerlSetVar reCaptchaTicketLoginHandler /reCaptchalogin
  #This is the path for the cookie
  PerlSetVar reCaptchaPath /
- PerlSetVar reCaptchaDomain sandbox.ehawaii.gov
+ PerlSetVar reCaptchaDomain www.example.com
  #only use if you want to force your URL to be SSL
  #PerlSetVar reCaptchaSecure 1
  PerlSetVar reCaptchaPublicKey biglongrandompublicstringfromrecaptchaproject
@@ -231,11 +232,11 @@ You will recieve a public key from the reCaptcha project once you sign up
 You will recieve a public key from the reCaptcha project once you sign up
 
 It's easier to place the main config (Like the above config) into a conf file and use Include to include it into your httpd.conf or virtual 
-host config. This defines all the basic setp
+host config. This defines all the basic setup
 
 =head1 BUGS
 
-If you are using this with proxypas, you pay hav troubles getting it to work past the first level of the uri
+If you are using this with proxypass, you may have troubles getting it to work past the first level of the uri
 
 =head1 CREDITS
 
